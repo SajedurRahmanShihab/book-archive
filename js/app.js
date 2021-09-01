@@ -3,7 +3,14 @@ const searchBook = () => {
     const searchItemText = searchItem.value;
     // clear search area
     searchItem.value = '';
-
+    const messageArea = document.getElementById('message');
+    // if user doesn't give any input then it will show a message
+    if (searchItemText === '') {
+        const h2 = document.createElement('h2');
+        h2.innerText = `Search can't be empty`;
+        messageArea.appendChild(h2);
+        return;
+    }
 
 
 
