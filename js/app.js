@@ -15,6 +15,8 @@ const searchBook = () => {
     // if user doesn't give any input then it will show a message
     if (searchItemText === '') {
         const h2 = document.createElement('h2');
+        const searchResult = document.getElementById('search-result');
+        searchResult.textContent = '';
         h2.innerHTML = `<h2 class="text-danger">Search can't be empty</h2>`;
         messageArea.appendChild(h2);
         return;
