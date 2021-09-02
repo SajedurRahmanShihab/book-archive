@@ -27,6 +27,7 @@ const searchBook = () => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayBook(data.docs))
+        // .then(data => console.log(data))
     fetch(url)
         .then(res => res.json())
         .then(data => displayResult(data))
@@ -41,7 +42,7 @@ const displayBook = (books) => {
         div.classList.add('col');
         div.innerHTML = `
         <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-title"><b>Book Name:</b> ${book.title}</p>
                     <b>Publisher:</b> ${book.publisher} <br>
