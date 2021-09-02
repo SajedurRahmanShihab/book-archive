@@ -37,7 +37,7 @@ const displayBook = (books) => {
     const searchResult = document.getElementById('search-result');
     // clear previous search result
     searchResult.textContent = '';
-    books.forEach(book => {
+    books.slice(0, 30).forEach(book => {
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
