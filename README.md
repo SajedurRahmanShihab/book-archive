@@ -4,4 +4,5 @@
 
 1. Search Box and Button
 2. Display How many items are found.
-3. Display Book Name, Author, Publisher, Fist Publish Publish Year,
+3. Display Book Name, Author, Publisher, Fist Publish Publish Year
+4. Display Book Cover
