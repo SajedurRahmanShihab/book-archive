@@ -34,6 +34,7 @@ const searchBook = () => {
 
 const displayBook = (books) => {
     const searchResult = document.getElementById('search-result');
+    // clear previous search result
     searchResult.textContent = '';
     books.forEach(book => {
         const div = document.createElement('div');
