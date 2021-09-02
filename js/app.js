@@ -1,3 +1,4 @@
+// Display How many results are found
 const displayResult = searchItem => {
     const message = document.getElementById('message');
     message.innerText = '';
@@ -18,7 +19,6 @@ const searchBook = () => {
         messageArea.appendChild(h2);
         return;
     }
-
 
 
 
